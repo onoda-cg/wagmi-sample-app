@@ -14,7 +14,7 @@ import { publicProvider } from 'wagmi/providers/public'
 
 const alchemyId = process.env.ALCHEMY_API_KEY
 
-const { chains, provider, webSocketProvider } = configureChains([chain.polygonMumbai] , [
+const { chains, provider, webSocketProvider } = configureChains([chain.polygonMumbai, ...defaultChains] , [
   alchemyProvider({ alchemyId }),
   publicProvider(),
 ])
