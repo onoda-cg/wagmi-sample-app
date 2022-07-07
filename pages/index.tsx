@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <hr/>
 
         <div>
-          Contract Greeter's <code>greet()</code> result: {isMounted ? ( isLoading ? "(loading...)" : data ) : ""}
+          Contract Greeter&apos;s <code>greet()</code> result: {isMounted ? ( isLoading ? "(loading...)" : data ) : ""}
           <br/>
           <button type="button" onClick={async () => {await refetch()}}>refetch</button>
         </div>
